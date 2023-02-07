@@ -1,0 +1,209 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+  :root{
+    --green:green;
+    --black:#130f40; 
+    --light-color:#666;
+    --box-shadow: 0rem .2rem 2rem rgba(0,0,0.1);
+    --border: 2rem solid rgba(0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0.1);
+  }
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-decoration: none;
+    /* transition: all .2s linear; */
+    border: none;
+  }
+
+  html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
+
+  }
+  body{
+    background: #eee;
+  }
+  .header{
+    display: flex;
+    position:fixed;
+    align-items: center;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0%;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+  }
+  .header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+.header .logo i{
+color: var(--green);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+    color: var(--green);
+    
+}
+.icons div{
+    /* border: 1px solid; */
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: var(--black);
+    border-radius: .5rem;
+    background: #eee;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    
+}
+.icons div:hover{
+    
+    background: var(--green);
+    color: #fff;
+}
+#menu-btn{
+    display: none;
+}
+.search-form{
+/* border: 1px solid black; */
+    position: absolute;
+    border-radius: .5rem;
+    background-color: #fff;
+    top: 110%;
+    right: -110%;
+    width: 58rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+header .search-form.active{
+    right: 2rem;
+    transition: .3s linear;
+}
+.search-form input{
+    width: 100%;
+    height: 100%;
+    padding:0 1.5rem;
+    font-size: 1.6rem;
+    background:none ;
+    text-transform: none;
+    color: var(--black);
+
+}
+.search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.search-form label:hover{
+color: var(--green);
+}
+
+/* CART BOX START */
+.shopping-cart{
+  border-radius: .5rem;
+  width: 29rem;
+  position: absolute;
+  top: 110%;
+  right: -50%;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  background:#fff;
+}
+.shopping-cart .cart-box{
+  display: flex;
+  position: relative;
+  align-items: center;
+  /* border: 2px solid red; */
+  gap:1rem;
+  margin: 1rem 0;
+  
+}
+.shopping-cart .cart-box img{
+  height: 9.5rem;
+}
+.shopping-cart .cart-box .fa-trash{
+  font-size: 2rem;
+  position: absolute;
+  top: 110%;
+  transform: translateY(-50%);
+  right: 2rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.shopping-cart .cart-box .fa-trash:hover{
+  color: rgb(245, 45, 45);
+  transition: .3s ease-in-out;
+}
+.shopping-cart .cart-box .contant h3{
+  color: var(--black);
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.shopping-cart .cart-box .contant span{
+  color: var(--light-color);
+  font-size: 1.21rem;
+ 
+}
+.shopping-cart .cart-box .contant .quantity{
+  padding-left: 1rem;
+}
+.shopping-cart .total{
+  font-size: 2.1rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--black);
+}
+.shopping-cart .btn{
+  margin-top: 1rem;
+  display:inline-block ;
+  padding: .8rem 3rem;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: .5rem;
+
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.shopping-cart .btn{
+  display: block;
+  margin: 1rem 0;
+}
+.shopping-cart .btn:hover{
+  background: var(--green);
+  color: #fff;
+  font-weight: bold;
+  transition: .2s ease-in;
+}
+
+.shopping-cart.active{
+  right: 2rem;
+  transition: .4s linear;
+}
+
+/* CART BOX END */
