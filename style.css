@@ -207,3 +207,73 @@ color: var(--green);
 }
 
 /* CART BOX END */
+
+/* LOGIN BOX START */
+.login-form{
+  background: #FFF;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 110%;
+  right: -80%;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: .5rem;
+  text-align: center;
+  width: 28rem;
+}
+.login-form h3{
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.login-form .box{
+  width: 100%;
+  height: 100%;
+  margin: .7rem 0;
+  background:#eee;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+.login-form p{
+  font-size: 1.4rem;
+  padding-top: .9rem 0;
+  color: var(--black);
+}
+.login-form p a{
+  font-size: 1.4rem;
+  padding: .5rem 0;
+  color: green;
+  margin-left: .3rem;
+}
+.login-form .btnn{
+  margin-top: 1rem;
+  display:inline-block ;
+  padding: .8rem 3rem;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: .5rem;
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  font-weight: bold;
+
+}
+.login-form .btnn:hover{
+  color: #fff;
+  background-color: var(--green);
+  font-weight: bold;
+  transition: .2s ease-in;
+}
+.login-form.active{
+  right:2rem;
+  transition: .4s linear;
+}
+
+
+/* LOGIN BOX END */
