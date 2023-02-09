@@ -12,3 +12,11 @@ let cartBtn = document.querySelector(".shopping-cart")
    cartBtn.classList.toggle('active');
    }
 // CART BOX START
+
+// LOGIN BOX START
+let loginBox =document.querySelector(".login-form");
+    document.querySelector("#login-btn").onclick =() =>{
+    loginBox.classList.toggle('active');
+    }
+
+// LOGIN BOX END
